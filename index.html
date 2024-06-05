@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <title>BlueGuard</title>
 </head>
 <body>
@@ -17,11 +18,23 @@
             <a class="cabecalho-menu-item" href="#beneficios">Benefícios</a>
             <a class="cabecalho-menu-item" href="#solucao">Solução</a>
         </nav>
+        <img class="cabecalho-imagem-login" id="loginImage" src="login.png" alt="Login">
     </header>
+
+    <section id="login" style="display: none;">
+        <h2>Login</h2>
+        <form action="/submit_login" method="post">
+            <label for="username">Nome de usuário:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Entrar">
+        </form>
+    </section>
 
     <main class="conteudo">
         <img class="conteudo-imagem-banner" src="banner.svg" alt="banner">           
-        <section id="problema" class="conteudo-principal">
+        <section id="problema" class="conteudo-principal" data-aos="fade-up">
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">Problema</h1>
                 <h2 class="conteudo-principal-escrito-subtitulo">A preservação dos oceanos através da economia azul aliada à tecnologia.</h2>
@@ -36,7 +49,7 @@
             <img class="conteudo-imagem-problema" src="problema.svg" alt="problema">
         </section>
 
-        <section id="tecnologia" class="conteudo-secundario">
+        <section id="tecnologia" class="conteudo-secundario" data-aos="fade-up">
             <h1 class="conteudo-secundario-titulo">Tecnologia</h1>
             <div class="conteudo-secundario-content">
                 <img class="conteudo-imagem-boia" src="boia.svg" alt="boia">
@@ -48,7 +61,7 @@
             </div>
         </section>
         
-        <section id="objetivos" class="conteudo-terciário">
+        <section id="objetivos" class="conteudo-terciário" data-aos="fade-up">
             <h1 class="conteudo-terciário-titulo">Objetivos</h1>
             <div class="conteudo-terciário-container">
             <div class="container1">
@@ -63,7 +76,7 @@
             </div>
         </section>
         
-        <section id="publico" class="conteudo-quaternário">
+        <section id="publico" class="conteudo-quaternário" data-aos="fade-up">
             <div class="conteudo-quaternário-container">
                 <h1 class="conteudo-quaternário-titulo">Público</h1>
             </div>
@@ -84,7 +97,7 @@
             </div>
         </section>
         
-        <section  id="beneficios" class="conteudo-quinário">
+        <section  id="beneficios" class="conteudo-quinário" data-aos="fade-up">
             <div class="conteudo-quinário-escrito">
                 <h1 class="conteudo-quinário-escrito-titulo">Benefícios</h1>
                 <p class="conteudo-quinário-paragrafo">
@@ -103,7 +116,7 @@
             <img class="conteudo-imagem-beneficio" src="beneficio.svg" alt="beneficio">
         </section>
 
-        <section id="solucao" class="conteudo-senário">
+        <section id="solucao" class="conteudo-senário" data-aos="fade-up">
             <img class="conteudo-imagem-solucao" src="solução.svg" alt="solucao">
             <div class="conteudo-senário-escrito">
                 <h1 class="conteudo-senário-escrito-titulo">Solução</h1>
@@ -121,5 +134,9 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
