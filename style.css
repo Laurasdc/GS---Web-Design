@@ -9,11 +9,43 @@
 
 }
 
+#loginAlerta {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#loginFormulario {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.cabecalho-imagem-login {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     font-size: 100%;
     background: linear-gradient(to bottom, #043659,
     #44B4E9);
     background-attachment: fixed;
+    opacity: 0;
+    transition: opacity 2s;
 
 }
 
