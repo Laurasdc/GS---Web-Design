@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>BlueGuard</title>
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho-imagem" src="logo.svg" alt="logo">
+        <img class="cabecalho-imagem" src="assets/logo.svg" alt="logo">
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-item" href="#problema">Problema</a>
             <a class="cabecalho-menu-item" href="#tecnologia">Tecnologia</a>
@@ -18,7 +19,7 @@
             <a class="cabecalho-menu-item" href="#beneficios">Benefícios</a>
             <a class="cabecalho-menu-item" href="#solucao">Solução</a>
         </nav>
-        <img class="cabecalho-imagem-login" id="loginImage" src="login.png" alt="Login">
+        <img class="cabecalho-imagem-login" id="loginImage" src="assets/login.png" alt="Login">
     </header>
 
     <section id="login" style="display: none;">
@@ -33,7 +34,28 @@
     </section>
 
     <main class="conteudo">
-        <img class="conteudo-imagem-banner" src="banner.svg" alt="banner">           
+            <main class="conteudo">
+        <div id="meuCarrossel" class="carrosel slide" data-ride="carrosel">
+            <div class="carrosel-inner">
+                <div class="carrosel-item active">
+                    <img src="assets/banner.svg" class="d-block w-100" alt="imagem banner1">
+                </div>
+                <div class="carrosel-item">
+                    <img src="assets/imagem2.jpg" class="d-block w-100" alt="imagem banner2">
+                </div>
+                <div class="carrosel-item">
+                    <img src="assets/imagem3.jpg" class="d-block w-100" alt="imagem banner3">
+                </div>
+            </div>
+            <a class="carrosel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
+                <span class="carrosel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carrosel-control-next" href="#meuCarrossel" role="button" data-slide="next">
+                <span class="carrosel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>           
         <section id="problema" class="conteudo-principal" data-aos="fade-up">
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">Problema</h1>
@@ -46,13 +68,13 @@
                     altamente corrosivo.
                 </p>
             </div>
-            <img class="conteudo-imagem-problema" src="problema.svg" alt="problema">
+            <img class="conteudo-imagem-problema" src="assets/problema.svg" alt="problema">
         </section>
 
         <section id="tecnologia" class="conteudo-secundario" data-aos="fade-up">
             <h1 class="conteudo-secundario-titulo">Tecnologia</h1>
             <div class="conteudo-secundario-content">
-                <img class="conteudo-imagem-boia" src="boia.svg" alt="boia">
+                <img class="conteudo-imagem-boia" src="assets/boia.svg" alt="boia">
                 <div class="container">
                     <p class="conteudo-secundario-paragrafo">
                         Utilizar uma rede de boias equipadas com sensores avançados para medir diversos parâmetros da qualidade da água, como pureza, pH, turbidez e temperatura. Esses sensores estarão localizados em pontos estratégicos do oceano. A transmissão dos dados coletados será feita em tempo real para uma plataforma online. Além disso, utilizaremos mapas interativos no site para visualização dos dados e ferramentas de análise para identificação de padrões.
@@ -113,11 +135,11 @@
                     identificar rapidamente áreas críticas.
                 </p>
             </div>
-            <img class="conteudo-imagem-beneficio" src="beneficio.svg" alt="beneficio">
+            <img class="conteudo-imagem-beneficio" src="assets/beneficio.svg" alt="beneficio">
         </section>
 
         <section id="solucao" class="conteudo-senário" data-aos="fade-up">
-            <img class="conteudo-imagem-solucao" src="solução.svg" alt="solucao">
+            <img class="conteudo-imagem-solucao" src="assets/solução.svg" alt="solucao">
             <div class="conteudo-senário-escrito">
                 <h1 class="conteudo-senário-escrito-titulo">Solução</h1>
                 <p class="conteudo-senário-paragrafo">
@@ -133,6 +155,8 @@
         <p class="conteudo-rodape">BlueGuard © 2024.  Todos os  direitos  reservados. | Criado por Ali Andrea, Laura Souza e Sofia Fernandes</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
